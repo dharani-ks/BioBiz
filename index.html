@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioBiz Responsive Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm px-4">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-success" href="#">
+        <img src="./assets/biobiz-logo.png" alt="BioBiz Logo" width="120px">
+      </a>
+      <!-- Toggler Button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Offcanvas Sidebar -->
+      <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">India Updates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Opportunities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Consulting</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Insights</a>
+              <ul class="dropdown-menu border-top border-primary">
+                <li><a class="dropdown-item" href="#">Bioenergy</a></li>
+                <li><a class="dropdown-item" href="#">Environmental Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Biomass Residues</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Video Header -->
+  <div class="custom-height position-relative">
+    <video autoplay muted loop class="w-100 h-100 object-fit-cover" src="./assets/video.mp4"></video>
+  </div>
+
+  <!-- Main Section -->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Left Content -->
+      <div class="col-md-8">
+        <p class="fs-5">
+          At BioBiz, we capitalize on India's biodiversity and biomass residues to develop a sustainable bio-economy with exciting business opportunities for farmers, industries, and stakeholders.
+        </p>
+        <p class="fs-5">
+          As part of a leading climate tech consulting firm, we provide critical market intelligence, professional networking, and data-driven insights.
+        </p>
+        <h2 class="fw-bold text-center my-4">Main Sections</h2>
+        <div class="row text-center g-4">
+          <!-- Cards for Main Sections -->
+          <div class="col-6 col-sm-4">
+            <div class="p-3 shadow-effect hover-effect rounded-3 ">
+              <img src="./assets/opportunity.png" alt="Opportunities" width="60">
+              <p class="mt-2 fw-bold">Opportunities</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="p-3 shadow-effect hover-effect rounded-3 ">
+              <img src="./assets/consulting.png" alt="Consulting" width="60">
+              <p class="mt-2 fw-bold">Consulting</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="p-3 shadow-effect hover-effect rounded-3 " >
+              <img src="./assets/insights.png" alt="Insights" width="60">
+              <p class="mt-2 fw-bold">Insights</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="p-3 shadow-effect hover-effect rounded-3 ">
+              <img src="./assets/innovations.png" alt="Innovations" width="60">
+              <p class="mt-2 fw-bold">Innovations</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4">
+            <div class="p-3 shadow-effect hover-effect rounded-3 ">
+              <img src="./assets/leaf.png" alt="Biomass Residues" width="60">
+              <p class="mt-2 fw-bold">Biomass Residues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Updates Section -->
+      <div class="col-md-4">
+        <div class="pb-4 pl-4 pr-4 bg-success text-white rounded-3 shadow scroll-box">
+          <h3 class="text-center title-update bg-success w-100">India Updates</h3>
+          <ul class="list-unstyled mt-3">
+            <li>• Green Hydrogen Plant in Baddi: Oil India & HP Corporation</li>
+            <li>• Bio-CNG Plants in Greater Noida</li>
+            <li>• Biogas Plant Revived in Faridabad</li>
+            <li>• Straw-Based Biogas Plant Commercialization</li>
+            <li>• Biofuel from CO2 Tech by IIT Guwahati</li>
+          </ul>
+        </div>
+      </div>
+      
+      
+
+  <!-- Other Sections -->
+  <div class="other-sections text-center py-5 bg-warning">
+    <h2 class="fw-bold">Other Sections</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+      <a href="#" class="btn btn-primary">India Updates</a>
+      <a href="#" class="btn btn-primary">Weekly Updates</a>
+      <a href="#" class="btn btn-primary">BRING</a>
+      <a href="#" class="btn btn-primary">Biomass Residues</a>
+    </div>
+    <p class="mt-3 text-white">BioBiz is a division of Energy Alternatives India (EAI).</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-3">
+    <p class="mb-0">&copy; 2024 BioBiz. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
